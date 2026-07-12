@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Every Chance Forward Foundation helps under-resourced children and students access supplies, tutoring, mentoring, enrichment, and opportunities.">
+  <title>Every Chance Forward Foundation</title>
+  <style>
+    :root{--navy:#17324d;--blue:#315f75;--gold:#e6ad57;--cream:#fbf7ee;--ink:#1d2830;--muted:#62717a;--white:#fff;--line:#dce4e5;--shadow:0 18px 45px rgba(22,49,74,.12)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6;background:#fff}
+    a{color:inherit} button,input,select,textarea{font:inherit} button{cursor:pointer}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.eyebrow{color:var(--blue);font-weight:800;letter-spacing:.13em;text-transform:uppercase;font-size:.78rem}.muted{color:var(--muted)}
+    .topbar{background:var(--navy);color:#fff;text-align:center;padding:8px 16px;font-size:.88rem}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:850;color:var(--navy);line-height:1.05}.mark{display:grid;place-items:center;width:42px;height:42px;border-radius:14px;background:var(--gold);color:var(--navy);font-weight:900}.links{display:flex;align-items:center;gap:25px}.links a{text-decoration:none;font-size:.94rem;font-weight:700}.button{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:13px 21px;background:var(--gold);color:var(--navy);font-weight:850;text-decoration:none;box-shadow:none}.button.secondary{background:var(--navy);color:#fff}.button.ghost{background:transparent;border:1px solid rgba(255,255,255,.55);color:#fff}.menu{display:none;background:none;border:0;font-size:1.4rem;color:var(--navy)}
+    .hero{position:relative;overflow:hidden;background:linear-gradient(120deg,var(--cream),#edf5f4);padding:84px 0 76px}.hero:after{content:"";position:absolute;width:390px;height:390px;border-radius:50%;background:rgba(230,173,87,.2);right:-100px;top:-160px}.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:70px;align-items:center;position:relative;z-index:1}.hero h1{font-family:Georgia,serif;color:var(--navy);font-size:clamp(2.8rem,5.7vw,5.5rem);line-height:.97;letter-spacing:-.04em;margin:14px 0 22px}.hero p{font-size:1.14rem;max-width:650px;color:#485760}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:29px}.hero-card{background:#fff;border-radius:28px;padding:29px;box-shadow:var(--shadow);transform:rotate(1deg)}.hero-card .art{height:230px;border-radius:20px;background:linear-gradient(145deg,#315f75,#17324d);display:grid;place-items:center;color:#fff;text-align:center;padding:25px}.art strong{font-family:Georgia,serif;font-size:2rem}.art span{display:block;color:#dbe8ea;margin-top:8px}.mini-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:13px}.mini-stats div{padding:11px 4px;text-align:center;border-radius:13px;background:var(--cream);font-size:.8rem}.mini-stats b{display:block;color:var(--navy);font-size:1rem}
+    section{padding:88px 0}.section-head{max-width:720px;margin-bottom:40px}.section-head h2{font-family:Georgia,serif;color:var(--navy);font-size:clamp(2.1rem,4vw,3.4rem);line-height:1.08;margin:8px 0 14px}.mission-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:start}.quote{background:var(--navy);color:#fff;padding:36px;border-radius:24px;box-shadow:var(--shadow);font-family:Georgia,serif;font-size:1.55rem}.quote small{display:block;font:700 .82rem Inter,sans-serif;color:#c8d9df;margin-top:22px;text-transform:uppercase;letter-spacing:.1em}.pillars{display:grid;grid-template-columns:1fr 1fr;gap:17px}.card{border:1px solid var(--line);border-radius:20px;padding:25px;background:#fff}.icon{width:44px;height:44px;display:grid;place-items:center;border-radius:13px;background:#f7e7ca;color:var(--navy);font-weight:900}.card h3{color:var(--navy);margin:16px 0 7px}.programs{background:var(--cream)}.program-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.program{background:#fff;border-radius:22px;padding:27px;border-bottom:4px solid var(--gold)}
+    .impact{background:var(--blue);color:#fff}.impact .section-head h2,.impact .eyebrow{color:#fff}.numbers{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.number{border-left:1px solid rgba(255,255,255,.35);padding-left:20px}.number b{display:block;font:700 clamp(2rem,4vw,3.6rem) Georgia,serif;color:#fff}.number span{color:#e0ebed}.impact-note{font-size:.78rem;color:#dce7e9;margin-top:30px}
+    .get-involved{display:grid;grid-template-columns:1fr 1fr;gap:22px}.panel{border-radius:25px;padding:36px;background:var(--cream)}.panel.dark{background:var(--navy);color:#fff}.panel h3{font:700 2rem Georgia,serif;color:var(--navy);margin:7px 0 10px}.panel.dark h3{color:#fff}.panel ul{padding-left:20px}.panel li{margin:8px 0}.amounts{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0}.amount{border:1px solid rgba(255,255,255,.45);background:transparent;color:#fff;border-radius:999px;padding:8px 15px;font-weight:800}.amount.active{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+    .contact{background:#f5f8f7}.form{display:grid;grid-template-columns:1fr 1fr;gap:15px;background:#fff;padding:30px;border-radius:24px;box-shadow:var(--shadow)}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:.85rem;font-weight:800;color:var(--navy)}.field input,.field select,.field textarea{width:100%;border:1px solid #ccd6d8;border-radius:12px;padding:12px 13px;background:#fff}.field textarea{min-height:110px;resize:vertical}.notice{display:none;grid-column:1/-1;background:#eaf5ee;color:#245d3a;border-radius:12px;padding:12px 14px;font-weight:700}
+    footer{background:#11283b;color:#d9e3e8;padding:50px 0 25px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:35px}.footer-grid h4{color:#fff}.footer-grid a{display:block;color:#d9e3e8;text-decoration:none;margin:7px 0}.legal{border-top:1px solid rgba(255,255,255,.15);margin-top:35px;padding-top:20px;color:#9eb0bb;font-size:.8rem}
+    @media(max-width:820px){.links{display:none;position:absolute;left:20px;right:20px;top:115px;z-index:10;background:#fff;border-radius:18px;padding:20px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch}.links.open{display:flex}.menu{display:block}.hero-grid,.mission-grid,.get-involved{grid-template-columns:1fr}.hero{padding-top:60px}.hero-card{transform:none}.program-grid{grid-template-columns:1fr 1fr}.numbers{grid-template-columns:1fr 1fr;row-gap:30px}.footer-grid{grid-template-columns:1fr 1fr}.footer-grid>div:first-child{grid-column:1/-1}}
+    @media(max-width:540px){.wrap{width:min(100% - 28px,1120px)}.brand span:last-child{max-width:210px}.hero h1{font-size:3rem}.hero-card{padding:17px}.program-grid,.pillars,.form,.footer-grid{grid-template-columns:1fr}.field.full,.footer-grid>div:first-child{grid-column:auto}.numbers{grid-template-columns:1fr}.number{padding:5px 0 5px 18px}.mini-stats{grid-template-columns:1fr}.actions .button{width:100%}section{padding:65px 0}}
+  </style>
+</head>
+<body>
+  <div class="topbar">A nonprofit website concept — programs, forms, and donation buttons are currently demonstrations.</div>
+  <header class="wrap">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#home"><span class="mark">ECF</span><span>Every Chance Forward<br>Foundation</span></a>
+      <button class="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <div class="links"><a href="#mission">Our mission</a><a href="#programs">Programs</a><a href="#volunteer">Volunteer</a><a href="#contact">Contact</a><a class="button" href="#donate">Donate</a></div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Opportunity for every student</div>
+          <h1>Every chance can move a future forward.</h1>
+          <p>We help children and students facing financial barriers access the practical resources, encouragement, and opportunities they need to learn, grow, and thrive.</p>
+          <div class="actions"><a class="button secondary" href="#volunteer">Become a volunteer</a><a class="button" href="#donate">Support a student</a></div>
+        </div>
+        <aside class="hero-card" aria-label="Our focus">
+          <div class="art"><div><strong>Support that meets students where they are.</strong><span>Supplies. Tutoring. Mentorship. Enrichment. Opportunity.</span></div></div>
+          <div class="mini-stats"><div><b>Learn</b>Academic support</div><div><b>Grow</b>Mentorship</div><div><b>Advance</b>Future readiness</div></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="mission">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">Our mission</div><h2>Removing barriers between students and opportunity.</h2><p class="muted">Every Chance Forward Foundation connects under-resourced young people with educational support, essential supplies, trusted mentors, and meaningful experiences.</p></div>
+        <div class="mission-grid">
+          <div class="quote">“A student’s circumstances should never decide how far their potential can take them.”<small>Our guiding belief</small></div>
+          <div class="pillars">
+            <article class="card"><div class="icon">01</div><h3>Practical support</h3><p class="muted">School supplies, books, technology access, clothing, and other essentials that help students participate confidently.</p></article>
+            <article class="card"><div class="icon">02</div><h3>Academic growth</h3><p class="muted">Tutoring, study support, and learning resources designed to build skills and confidence.</p></article>
+            <article class="card"><div class="icon">03</div><h3>Guidance</h3><p class="muted">Positive mentoring relationships that help young people set goals and navigate new possibilities.</p></article>
+            <article class="card"><div class="icon">04</div><h3>Future opportunity</h3><p class="muted">Enrichment, career exploration, and life-skills programs that help students prepare for what comes next.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="programs" id="programs">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">What we do</div><h2>Support for the whole student.</h2><p class="muted">Our program model is designed to grow with the organization and respond to what local children and families actually need.</p></div>
+        <div class="program-grid">
+          <article class="program"><div class="icon">✦</div><h3>Ready to Learn</h3><p class="muted">Backpacks, classroom supplies, books, technology support, and learning essentials.</p></article>
+          <article class="program"><div class="icon">↗</div><h3>Learning Forward</h3><p class="muted">Volunteer tutoring, homework help, study sessions, and academic skill-building.</p></article>
+          <article class="program"><div class="icon">◎</div><h3>Mentors Who Matter</h3><p class="muted">Consistent encouragement, goal-setting, and positive guidance from trained volunteers.</p></article>
+          <article class="program"><div class="icon">◇</div><h3>Explore & Discover</h3><p class="muted">Arts, STEM, sports, cultural experiences, and community-based enrichment.</p></article>
+          <article class="program"><div class="icon">→</div><h3>Future Ready</h3><p class="muted">Career exploration, financial basics, college awareness, and practical life skills.</p></article>
+          <article class="program"><div class="icon">＋</div><h3>Community Support</h3><p class="muted">Partnerships with schools and trusted organizations to connect families with resources.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="impact">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">Our future impact</div><h2>Built around outcomes that matter.</h2><p>As the organization launches, transparent reporting will show where support goes and how students benefit.</p></div>
+        <div class="numbers"><div class="number"><b>100%</b><span>Commitment to student-centered support</span></div><div class="number"><b>4</b><span>Core areas of opportunity</span></div><div class="number"><b>Local</b><span>School and community partnerships</span></div><div class="number"><b>Clear</b><span>Impact and financial reporting</span></div></div>
+        <div class="impact-note">These are organizational goals, not claims of completed impact. Verified program results can replace them after launch.</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap get-involved">
+        <article class="panel" id="volunteer"><div class="eyebrow">Give your time</div><h3>Volunteer with purpose.</h3><p class="muted">Help students through tutoring, mentoring, supply drives, events, communications, or community outreach.</p><ul><li>Flexible individual and group roles</li><li>Student-friendly service opportunities</li><li>Training and guidance for every role</li></ul><a class="button secondary" href="#contact">Join the interest list</a></article>
+        <article class="panel dark" id="donate"><div class="eyebrow" style="color:#e6ad57">Give support</div><h3>Help create the next chance.</h3><p>Choose a sample amount to see how a future donation experience could work.</p><div class="amounts"><button class="amount">$15</button><button class="amount active">$30</button><button class="amount">$50</button><button class="amount">$100</button></div><button class="button" id="donateButton">Continue with $30</button><p style="font-size:.76rem;color:#c8d6dd">Prototype only. No payment information is collected.</p></article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap mission-grid">
+        <div class="section-head"><div class="eyebrow">Get involved</div><h2>There is a place for you in this work.</h2><p class="muted">Tell us how you would like to help. This demonstration form does not send or store information.</p></div>
+        <form class="form" id="interestForm"><div class="field"><label for="name">Name</label><input id="name" required placeholder="Your name"></div><div class="field"><label for="email">Email</label><input id="email" type="email" required placeholder="you@example.com"></div><div class="field full"><label for="interest">I’m interested in</label><select id="interest"><option>Volunteering</option><option>Partnering as an organization</option><option>Supporting a program</option><option>Learning more</option></select></div><div class="field full"><label for="message">Message</label><textarea id="message" placeholder="How would you like to get involved?"></textarea></div><div class="notice" id="notice">Thanks! This is a demonstration, so your information was not submitted.</div><div class="field full"><button class="button secondary" type="submit">Send interest form</button></div></form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap"><div class="footer-grid"><div><a class="brand" style="color:#fff" href="#home"><span class="mark">ECF</span><span>Every Chance Forward Foundation</span></a><p style="max-width:430px">Creating access to resources, guidance, and opportunity for children and students facing financial barriers.</p></div><div><h4>Explore</h4><a href="#mission">Mission</a><a href="#programs">Programs</a><a href="#volunteer">Volunteer</a></div><div><h4>Connect</h4><a href="#contact">Contact</a><a href="#donate">Donate</a><a href="#home">Back to top</a></div></div><div class="legal">© 2026 Every Chance Forward Foundation. Website prototype. Nonprofit and tax-exempt status should not be represented until legally approved.</div></div>
+  </footer>
+  <script>
+    const menu=document.querySelector('.menu'),links=document.querySelector('.links');
+    menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',open)});
+    links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false')}));
+    const amountButtons=document.querySelectorAll('.amount'),donateButton=document.querySelector('#donateButton');
+    amountButtons.forEach(b=>b.addEventListener('click',()=>{amountButtons.forEach(x=>x.classList.remove('active'));b.classList.add('active');donateButton.textContent=`Continue with ${b.textContent}`}));
+    donateButton.addEventListener('click',()=>alert('This is a website prototype. No payment was started or collected.'));
+    document.querySelector('#interestForm').addEventListener('submit',e=>{e.preventDefault();document.querySelector('#notice').style.display='block'});
+  </script>
+</body>
+</html>
