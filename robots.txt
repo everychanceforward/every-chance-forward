@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://everychanceforward.github.io/every-chance-forward/sitemap.xml
