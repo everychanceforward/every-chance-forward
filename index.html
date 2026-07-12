@@ -21,7 +21,7 @@
   </style>
 </head>
 <body>
-  <div class="topbar">A nonprofit website concept — programs, forms, and donation buttons are currently demonstrations.</div>
+  <div class="topbar">Every Chance Forward Foundation — creating opportunity for children and students.</div>
   <header class="wrap">
     <nav class="nav" aria-label="Main navigation">
       <a class="brand" href="#home"><span class="mark">ECF</span><span>Every Chance Forward<br>Foundation</span></a>
@@ -85,21 +85,21 @@
 
     <section>
       <div class="wrap get-involved">
-        <article class="panel" id="volunteer"><div class="eyebrow">Give your time</div><h3>Volunteer with purpose.</h3><p class="muted">Help students through tutoring, mentoring, supply drives, events, communications, or community outreach.</p><ul><li>Flexible individual and group roles</li><li>Student-friendly service opportunities</li><li>Training and guidance for every role</li></ul><a class="button secondary" href="#contact">Join the interest list</a></article>
+        <article class="panel" id="volunteer"><div class="eyebrow">Give your time</div><h3>Volunteer with purpose.</h3><p class="muted">Help students through tutoring, mentoring, supply drives, events, communications, or community outreach.</p><ul><li>Flexible individual and group roles</li><li>Student-friendly service opportunities</li><li>Training and guidance for every role</li></ul><a class="button secondary" href="mailto:everychanceforward@gmail.com?subject=Volunteer%20Interest%20-%20Every%20Chance%20Forward">Email us to volunteer</a></article>
         <article class="panel dark" id="donate"><div class="eyebrow" style="color:#e6ad57">Give support</div><h3>Help create the next chance.</h3><p>Choose a sample amount to see how a future donation experience could work.</p><div class="amounts"><button class="amount">$15</button><button class="amount active">$30</button><button class="amount">$50</button><button class="amount">$100</button></div><button class="button" id="donateButton">Continue with $30</button><p style="font-size:.76rem;color:#c8d6dd">Prototype only. No payment information is collected.</p></article>
       </div>
     </section>
 
     <section class="contact" id="contact">
       <div class="wrap mission-grid">
-        <div class="section-head"><div class="eyebrow">Get involved</div><h2>There is a place for you in this work.</h2><p class="muted">Tell us how you would like to help. This demonstration form does not send or store information.</p></div>
+        <div class="section-head"><div class="eyebrow">Get involved</div><h2>There is a place for you in this work.</h2><p class="muted">Tell us how you would like to help. When you press the button, your email app will open a draft addressed to us.</p><p><a href="mailto:everychanceforward@gmail.com"><strong>everychanceforward@gmail.com</strong></a></p></div>
         <form class="form" id="interestForm"><div class="field"><label for="name">Name</label><input id="name" required placeholder="Your name"></div><div class="field"><label for="email">Email</label><input id="email" type="email" required placeholder="you@example.com"></div><div class="field full"><label for="interest">I’m interested in</label><select id="interest"><option>Volunteering</option><option>Partnering as an organization</option><option>Supporting a program</option><option>Learning more</option></select></div><div class="field full"><label for="message">Message</label><textarea id="message" placeholder="How would you like to get involved?"></textarea></div><div class="notice" id="notice">Thanks! This is a demonstration, so your information was not submitted.</div><div class="field full"><button class="button secondary" type="submit">Send interest form</button></div></form>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="wrap"><div class="footer-grid"><div><a class="brand" style="color:#fff" href="#home"><span class="mark">ECF</span><span>Every Chance Forward Foundation</span></a><p style="max-width:430px">Creating access to resources, guidance, and opportunity for children and students facing financial barriers.</p></div><div><h4>Explore</h4><a href="#mission">Mission</a><a href="#programs">Programs</a><a href="#volunteer">Volunteer</a></div><div><h4>Connect</h4><a href="#contact">Contact</a><a href="#donate">Donate</a><a href="#home">Back to top</a></div></div><div class="legal">© 2026 Every Chance Forward Foundation. Website prototype. Nonprofit and tax-exempt status should not be represented until legally approved.</div></div>
+      <div class="wrap"><div class="footer-grid"><div><a class="brand" style="color:#fff" href="#home"><span class="mark">ECF</span><span>Every Chance Forward Foundation</span></a><p style="max-width:430px">Creating access to resources, guidance, and opportunity for children and students facing financial barriers.</p></div><div><h4>Explore</h4><a href="#mission">Mission</a><a href="#programs">Programs</a><a href="#volunteer">Volunteer</a></div><div><h4>Connect</h4><a href="mailto:everychanceforward@gmail.com">Email us</a><a href="#donate">Donate</a><a href="#home">Back to top</a></div></div><div class="legal">© 2026 Every Chance Forward Foundation. Website prototype. Nonprofit and tax-exempt status should not be represented until legally approved.</div></div>
   </footer>
   <script>
     const menu=document.querySelector('.menu'),links=document.querySelector('.links');
@@ -108,7 +108,16 @@
     const amountButtons=document.querySelectorAll('.amount'),donateButton=document.querySelector('#donateButton');
     amountButtons.forEach(b=>b.addEventListener('click',()=>{amountButtons.forEach(x=>x.classList.remove('active'));b.classList.add('active');donateButton.textContent=`Continue with ${b.textContent}`}));
     donateButton.addEventListener('click',()=>alert('This is a website prototype. No payment was started or collected.'));
-    document.querySelector('#interestForm').addEventListener('submit',e=>{e.preventDefault();document.querySelector('#notice').style.display='block'});
+    document.querySelector('#interestForm').addEventListener('submit',e=>{
+      e.preventDefault();
+      const name=document.querySelector('#name').value.trim();
+      const email=document.querySelector('#email').value.trim();
+      const interest=document.querySelector('#interest').value;
+      const message=document.querySelector('#message').value.trim();
+      const subject=encodeURIComponent(`${interest} - Every Chance Forward`);
+      const body=encodeURIComponent(`Name: ${name}\nEmail: ${email}\nInterest: ${interest}\n\nMessage:\n${message}`);
+      window.location.href=`mailto:everychanceforward@gmail.com?subject=${subject}&body=${body}`;
+    });
   </script>
 </body>
 </html>
